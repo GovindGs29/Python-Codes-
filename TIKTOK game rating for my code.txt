@@ -1,0 +1,1001 @@
+Microsoft Windows [Version 10.0.19041.450]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\saamy>cd desktop
+
+C:\Users\saamy\Desktop>cr python
+'cr' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\saamy\Desktop>cd python
+
+C:\Users\saamy\Desktop\Python>dir
+ Volume in drive C is OS
+ Volume Serial Number is A25E-1E09
+
+ Directory of C:\Users\saamy\Desktop\Python
+
+09-09-2020  20:56    <DIR>          .
+09-09-2020  20:56    <DIR>          ..
+09-09-2020  19:38    <DIR>          .ipynb_checkpoints
+04-08-2020  11:45    <DIR>          Complete-Python-3-Bootcamp-master
+15-07-2020  20:05                89 Example1
+15-07-2020  20:24               121 Example1.py
+28-08-2020  21:42             2,628 FirstNotebook.ipynb
+28-08-2020  20:04               555 Fullstrech.ipynb
+30-08-2020  18:50         2,360,866 Milestone Project Practice.ipynb
+09-09-2020  20:27           139,668 My_practices.ipynb
+09-09-2020  20:44            35,256 OPP And ERROR & Exception.ipynb
+30-08-2020  16:41             6,659 practicee milestone project.ipynb
+30-08-2020  16:41            27,323 Proper.ipynb
+27-07-2020  13:51                97 sampletext.text
+09-09-2020  20:56             3,489 TIKTOK.py
+30-08-2020  17:22             6,327 TikTokToe.ipynb
+09-09-2020  20:44               492 try.py
+08-09-2020  22:13            21,011 W3 Practices.ipynb
+              14 File(s)      2,604,581 bytes
+               4 Dir(s)  126,817,808,384 bytes free
+
+C:\Users\saamy\Desktop\Python>pip install pylint
+Requirement already satisfied: pylint in c:\my studies\anaconda python\lib\site-packages (2.4.4)
+Requirement already satisfied: astroid<2.4,>=2.3.0 in c:\my studies\anaconda python\lib\site-packages (from pylint) (2.3.3)
+Requirement already satisfied: mccabe<0.7,>=0.6 in c:\my studies\anaconda python\lib\site-packages (from pylint) (0.6.1)
+Requirement already satisfied: isort<5,>=4.2.5 in c:\my studies\anaconda python\lib\site-packages (from pylint) (4.3.21)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\my studies\anaconda python\lib\site-packages (from pylint) (0.4.3)
+Requirement already satisfied: wrapt==1.11.* in c:\my studies\anaconda python\lib\site-packages (from astroid<2.4,>=2.3.0->pylint) (1.11.2)
+Requirement already satisfied: typed-ast<1.5,>=1.4.0; implementation_name == "cpython" and python_version < "3.8" in c:\my studies\anaconda python\lib\site-packages (from astroid<2.4,>=2.3.0->pylint) (1.4.1)
+Requirement already satisfied: six~=1.12 in c:\my studies\anaconda python\lib\site-packages (from astroid<2.4,>=2.3.0->pylint) (1.14.0)
+Requirement already satisfied: lazy-object-proxy==1.4.* in c:\my studies\anaconda python\lib\site-packages (from astroid<2.4,>=2.3.0->pylint) (1.4.3)
+
+C:\Users\saamy\Desktop\Python>pylint TIKTOK.py
+************* Module TIKTOK
+TIKTOK.py:3:7: C0326: Exactly one space required after comma
+    (v1,v2) = p
+       ^ (bad-whitespace)
+TIKTOK.py:4:14: C0326: Exactly one space required after assignment
+    position1 =''
+              ^ (bad-whitespace)
+TIKTOK.py:5:34: C0326: Exactly one space required after comma
+    while position1 not in range(1,9):
+                                  ^ (bad-whitespace)
+TIKTOK.py:7:31: C0326: Exactly one space required after comparison
+        if position1.isdigit() ==False or position1== '0' :
+                               ^^ (bad-whitespace)
+TIKTOK.py:7:51: C0326: Exactly one space required before comparison
+        if position1.isdigit() ==False or position1== '0' :
+                                                   ^^ (bad-whitespace)
+TIKTOK.py:7:58: C0326: No space allowed before :
+        if position1.isdigit() ==False or position1== '0' :
+                                                          ^ (bad-whitespace)
+TIKTOK.py:14:7: C0326: Exactly one space required after comma
+    (v1,v2) = p
+       ^ (bad-whitespace)
+TIKTOK.py:15:14: C0326: Exactly one space required after assignment
+    position2 =''
+              ^ (bad-whitespace)
+TIKTOK.py:16:34: C0326: Exactly one space required after comma
+    while position2 not in range(1,9):
+                                  ^ (bad-whitespace)
+TIKTOK.py:18:31: C0326: Exactly one space required after comparison
+        if position2.isdigit() ==False or position2== '0' :
+                               ^^ (bad-whitespace)
+TIKTOK.py:18:51: C0326: Exactly one space required before comparison
+        if position2.isdigit() ==False or position2== '0' :
+                                                   ^^ (bad-whitespace)
+TIKTOK.py:18:58: C0326: No space allowed before :
+        if position2.isdigit() ==False or position2== '0' :
+                                                          ^ (bad-whitespace)
+TIKTOK.py:23:20: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:25:18: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:28:28: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:28:19: C0326: Exactly one space required after comma
+    return (value_1,value_2)
+                   ^ (bad-whitespace)
+TIKTOK.py:30:16: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                ^ (bad-whitespace)
+TIKTOK.py:30:20: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                    ^ (bad-whitespace)
+TIKTOK.py:30:24: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                        ^ (bad-whitespace)
+TIKTOK.py:30:28: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                            ^ (bad-whitespace)
+TIKTOK.py:30:32: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:30:36: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:30:40: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:30:44: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:30:48: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:35:16: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                ^ (bad-whitespace)
+TIKTOK.py:35:20: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                    ^ (bad-whitespace)
+TIKTOK.py:35:24: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                        ^ (bad-whitespace)
+TIKTOK.py:35:28: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                            ^ (bad-whitespace)
+TIKTOK.py:35:32: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:35:36: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:35:40: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:35:44: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:35:48: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:40:15: C0326: Exactly one space required after assignment
+        life_3 =True
+               ^ (bad-whitespace)
+TIKTOK.py:44:314: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:44:0: C0301: Line too long (314/100) (line-too-long)
+TIKTOK.py:44:19: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                   ^^ (bad-whitespace)
+TIKTOK.py:44:29: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                             ^^ (bad-whitespace)
+TIKTOK.py:44:39: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                       ^^ (bad-whitespace)
+TIKTOK.py:44:58: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                          ^^ (bad-whitespace)
+TIKTOK.py:44:68: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                    ^^ (bad-whitespace)
+TIKTOK.py:44:78: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                              ^^ (bad-whitespace)
+TIKTOK.py:44:97: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:107: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:44:117: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:44:135: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:145: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:155: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:44:173: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:183: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:193: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:211: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:44:221: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:231: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:249: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:44:259: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:44:269: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:287: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:44:297: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:44:307: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:49:0: C0301: Line too long (331/100) (line-too-long)
+TIKTOK.py:49:22: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                      ^^ (bad-whitespace)
+TIKTOK.py:49:38: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                      ^^ (bad-whitespace)
+TIKTOK.py:49:58: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                          ^^ (bad-whitespace)
+TIKTOK.py:49:74: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                          ^^ (bad-whitespace)
+TIKTOK.py:49:94: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                              ^^ (bad-whitespace)
+TIKTOK.py:49:110: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                              ^^ (bad-whitespace)
+TIKTOK.py:49:130: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                  ^^ (bad-whitespace)
+TIKTOK.py:49:146: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                  ^^ (bad-whitespace)
+TIKTOK.py:49:165: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:49:181: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:49:201: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:49:217: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:49:237: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:49:253: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:49:273: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:49:289: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:49:308: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                                    ^^ (bad-whitespace)
+TIKTOK.py:49:324: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                                                    ^^ (bad-whitespace)
+TIKTOK.py:51:19: C0326: Exactly one space required after assignment
+            choice =''
+                   ^ (bad-whitespace)
+TIKTOK.py:52:55: C0326: Exactly one space required before comparison
+            while choice != ('yes' or 'Yes') and choice!= ('No' or 'no'):
+                                                       ^^ (bad-whitespace)
+TIKTOK.py:54:39: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                       ^ (bad-whitespace)
+TIKTOK.py:54:45: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                             ^ (bad-whitespace)
+TIKTOK.py:54:50: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                                  ^ (bad-whitespace)
+TIKTOK.py:56:36: C0326: Exactly one space required after comma
+                elif choice in ('No','no'):
+                                    ^ (bad-whitespace)
+TIKTOK.py:64:69: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:64:32: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:64:36: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:64:40: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:64:44: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:64:48: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:64:52: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                    ^ (bad-whitespace)
+TIKTOK.py:64:56: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                        ^ (bad-whitespace)
+TIKTOK.py:64:60: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                            ^ (bad-whitespace)
+TIKTOK.py:64:64: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                                ^ (bad-whitespace)
+TIKTOK.py:65:42: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:65:18: C0326: Exactly one space required after comparison
+        if life_2 =='' and life_3 == True:
+                  ^^ (bad-whitespace)
+TIKTOK.py:69:0: C0301: Line too long (316/100) (line-too-long)
+TIKTOK.py:69:23: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                       ^^ (bad-whitespace)
+TIKTOK.py:69:33: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                 ^^ (bad-whitespace)
+TIKTOK.py:69:43: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                           ^^ (bad-whitespace)
+TIKTOK.py:69:61: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:71: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                       ^^ (bad-whitespace)
+TIKTOK.py:69:81: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:69:99: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:109: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:119: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:69:137: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:147: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:157: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:175: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:185: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:195: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:213: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:69:223: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:233: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:251: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:69:261: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:69:271: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:289: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:69:299: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:69:309: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:72:35: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:73:0: C0304: Final newline missing (missing-final-newline)
+TIKTOK.py:1:0: C0103: Module name "TIKTOK" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TIKTOK.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:2:4: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:3:5: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:3:8: C0103: Variable name "v2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:7:11: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+TIKTOK.py:3:8: W0612: Unused variable 'v2' (unused-variable)
+TIKTOK.py:12:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:13:4: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:14:5: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:14:8: C0103: Variable name "v2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:18:11: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+TIKTOK.py:14:5: W0612: Unused variable 'v1' (unused-variable)
+TIKTOK.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:30:4: W0612: Unused variable 'board' (unused-variable)
+TIKTOK.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:41:8: C0103: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:44:8: R1723: Unnecessary "elif" after "break" (no-else-break)
+TIKTOK.py:44:11: R0916: Too many boolean expressions in if statement (8/5) (too-many-boolean-expressions)
+TIKTOK.py:49:13: R0916: Too many boolean expressions in if statement (18/5) (too-many-boolean-expressions)
+TIKTOK.py:52:18: R1714: Consider merging these comparisons with "in" to "choice not in ('yes' or 'Yes', 'No' or 'no')" (consider-using-in)
+TIKTOK.py:65:27: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+TIKTOK.py:66:12: C0103: Variable name "p2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:69:15: R0916: Too many boolean expressions in if statement (8/5) (too-many-boolean-expressions)
+
+-------------------------------------
+Your code has been rated at -11.57/10
+
+
+C:\Users\saamy\Desktop\Python>pylint TIKTOK.py -r y
+************* Module TIKTOK
+TIKTOK.py:3:7: C0326: Exactly one space required after comma
+    (v1,v2) = p
+       ^ (bad-whitespace)
+TIKTOK.py:4:14: C0326: Exactly one space required after assignment
+    position1 =''
+              ^ (bad-whitespace)
+TIKTOK.py:5:34: C0326: Exactly one space required after comma
+    while position1 not in range(1,9):
+                                  ^ (bad-whitespace)
+TIKTOK.py:7:31: C0326: Exactly one space required after comparison
+        if position1.isdigit() ==False or position1== '0' :
+                               ^^ (bad-whitespace)
+TIKTOK.py:7:51: C0326: Exactly one space required before comparison
+        if position1.isdigit() ==False or position1== '0' :
+                                                   ^^ (bad-whitespace)
+TIKTOK.py:7:58: C0326: No space allowed before :
+        if position1.isdigit() ==False or position1== '0' :
+                                                          ^ (bad-whitespace)
+TIKTOK.py:14:7: C0326: Exactly one space required after comma
+    (v1,v2) = p
+       ^ (bad-whitespace)
+TIKTOK.py:15:14: C0326: Exactly one space required after assignment
+    position2 =''
+              ^ (bad-whitespace)
+TIKTOK.py:16:34: C0326: Exactly one space required after comma
+    while position2 not in range(1,9):
+                                  ^ (bad-whitespace)
+TIKTOK.py:18:31: C0326: Exactly one space required after comparison
+        if position2.isdigit() ==False or position2== '0' :
+                               ^^ (bad-whitespace)
+TIKTOK.py:18:51: C0326: Exactly one space required before comparison
+        if position2.isdigit() ==False or position2== '0' :
+                                                   ^^ (bad-whitespace)
+TIKTOK.py:18:58: C0326: No space allowed before :
+        if position2.isdigit() ==False or position2== '0' :
+                                                          ^ (bad-whitespace)
+TIKTOK.py:23:20: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:25:18: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:28:28: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:28:19: C0326: Exactly one space required after comma
+    return (value_1,value_2)
+                   ^ (bad-whitespace)
+TIKTOK.py:30:16: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                ^ (bad-whitespace)
+TIKTOK.py:30:20: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                    ^ (bad-whitespace)
+TIKTOK.py:30:24: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                        ^ (bad-whitespace)
+TIKTOK.py:30:28: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                            ^ (bad-whitespace)
+TIKTOK.py:30:32: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:30:36: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:30:40: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:30:44: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:30:48: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:35:16: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                ^ (bad-whitespace)
+TIKTOK.py:35:20: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                    ^ (bad-whitespace)
+TIKTOK.py:35:24: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                        ^ (bad-whitespace)
+TIKTOK.py:35:28: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                            ^ (bad-whitespace)
+TIKTOK.py:35:32: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:35:36: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:35:40: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:35:44: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:35:48: C0326: Exactly one space required after comma
+    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:40:15: C0326: Exactly one space required after assignment
+        life_3 =True
+               ^ (bad-whitespace)
+TIKTOK.py:44:314: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:44:0: C0301: Line too long (314/100) (line-too-long)
+TIKTOK.py:44:19: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                   ^^ (bad-whitespace)
+TIKTOK.py:44:29: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                             ^^ (bad-whitespace)
+TIKTOK.py:44:39: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                       ^^ (bad-whitespace)
+TIKTOK.py:44:58: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                          ^^ (bad-whitespace)
+TIKTOK.py:44:68: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                    ^^ (bad-whitespace)
+TIKTOK.py:44:78: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                              ^^ (bad-whitespace)
+TIKTOK.py:44:97: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:107: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:44:117: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:44:135: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:145: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:155: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:44:173: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:183: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:193: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:44:211: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:44:221: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:231: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:44:249: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:44:259: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:44:269: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:44:287: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:44:297: C0326: Exactly one space required around comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:44:307: C0326: Exactly one space required before comparison
+        if board[1]==board[2]==board[3]== 'X' or  board[4]==board[5]==board[6]== 'X' or  board[7]==board[8]==board[9]== 'X' or board[1]==board[4]==board[7]== 'X' or board[2]==board[5]==board[8]== 'X' or board[3]==board[6]==board[9]== 'X' or board[1]==board[5]==board[9]== 'X' or board[3]==board[5]==board[7]== 'X':
+                                                                                                                                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:49:0: C0301: Line too long (331/100) (line-too-long)
+TIKTOK.py:49:22: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                      ^^ (bad-whitespace)
+TIKTOK.py:49:38: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                      ^^ (bad-whitespace)
+TIKTOK.py:49:58: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                          ^^ (bad-whitespace)
+TIKTOK.py:49:74: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                          ^^ (bad-whitespace)
+TIKTOK.py:49:94: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                              ^^ (bad-whitespace)
+TIKTOK.py:49:110: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                              ^^ (bad-whitespace)
+TIKTOK.py:49:130: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                  ^^ (bad-whitespace)
+TIKTOK.py:49:146: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                  ^^ (bad-whitespace)
+TIKTOK.py:49:165: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:49:181: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:49:201: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:49:217: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:49:237: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:49:253: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:49:273: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:49:289: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:49:308: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                                    ^^ (bad-whitespace)
+TIKTOK.py:49:324: C0326: Exactly one space required around comparison
+        elif (board[1]=='X'or board[1]=='O') and (board[2]=='X'or board[2]=='O') and (board[3]=='X'or board[3]=='O') and (board[4]=='X'or board[4]=='O')and (board[5]=='X'or board[5]=='O') and (board[6]=='X'or board[6]=='O') and (board[7]=='X'or board[7]=='O') and (board[8]=='X'or board[8]=='O')and (board[9]=='X'or board[9]=='O'):
+                                                                                                                                                                                                                                                                                                                                    ^^ (bad-whitespace)
+TIKTOK.py:51:19: C0326: Exactly one space required after assignment
+            choice =''
+                   ^ (bad-whitespace)
+TIKTOK.py:52:55: C0326: Exactly one space required before comparison
+            while choice != ('yes' or 'Yes') and choice!= ('No' or 'no'):
+                                                       ^^ (bad-whitespace)
+TIKTOK.py:54:39: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                       ^ (bad-whitespace)
+TIKTOK.py:54:45: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                             ^ (bad-whitespace)
+TIKTOK.py:54:50: C0326: Exactly one space required after comma
+                if choice not in ('yes','Yes','No','no'):
+                                                  ^ (bad-whitespace)
+TIKTOK.py:56:36: C0326: Exactly one space required after comma
+                elif choice in ('No','no'):
+                                    ^ (bad-whitespace)
+TIKTOK.py:64:69: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:64:32: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                ^ (bad-whitespace)
+TIKTOK.py:64:36: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                    ^ (bad-whitespace)
+TIKTOK.py:64:40: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                        ^ (bad-whitespace)
+TIKTOK.py:64:44: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                            ^ (bad-whitespace)
+TIKTOK.py:64:48: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                ^ (bad-whitespace)
+TIKTOK.py:64:52: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                    ^ (bad-whitespace)
+TIKTOK.py:64:56: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                        ^ (bad-whitespace)
+TIKTOK.py:64:60: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                            ^ (bad-whitespace)
+TIKTOK.py:64:64: C0326: Exactly one space required after comma
+                    board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                                                                ^ (bad-whitespace)
+TIKTOK.py:65:42: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:65:18: C0326: Exactly one space required after comparison
+        if life_2 =='' and life_3 == True:
+                  ^^ (bad-whitespace)
+TIKTOK.py:69:0: C0301: Line too long (316/100) (line-too-long)
+TIKTOK.py:69:23: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                       ^^ (bad-whitespace)
+TIKTOK.py:69:33: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                 ^^ (bad-whitespace)
+TIKTOK.py:69:43: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                           ^^ (bad-whitespace)
+TIKTOK.py:69:61: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:71: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                       ^^ (bad-whitespace)
+TIKTOK.py:69:81: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:69:99: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:109: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:119: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                       ^^ (bad-whitespace)
+TIKTOK.py:69:137: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:147: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:157: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                             ^^ (bad-whitespace)
+TIKTOK.py:69:175: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:185: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:195: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                   ^^ (bad-whitespace)
+TIKTOK.py:69:213: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:69:223: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:233: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                         ^^ (bad-whitespace)
+TIKTOK.py:69:251: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:69:261: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:69:271: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                               ^^ (bad-whitespace)
+TIKTOK.py:69:289: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                 ^^ (bad-whitespace)
+TIKTOK.py:69:299: C0326: Exactly one space required around comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                           ^^ (bad-whitespace)
+TIKTOK.py:69:309: C0326: Exactly one space required before comparison
+            if board[1]==board[2]==board[3]== 'O' or board[4]==board[5]==board[6]== 'O' or board[7]==board[8]==board[9]== 'O' or board[1]==board[4]==board[7]== 'O' or board[2]==board[5]==board[8]== 'O' or board[3]==board[6]==board[9]== 'O' or board[1]==board[5]==board[9]== 'O' or board[3]==board[5]==board[7]== 'O':
+                                                                                                                                                                                                                                                                                                                     ^^ (bad-whitespace)
+TIKTOK.py:72:35: C0303: Trailing whitespace (trailing-whitespace)
+TIKTOK.py:73:0: C0304: Final newline missing (missing-final-newline)
+TIKTOK.py:1:0: C0103: Module name "TIKTOK" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+TIKTOK.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:2:4: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:3:5: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:3:8: C0103: Variable name "v2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:7:11: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+TIKTOK.py:3:8: W0612: Unused variable 'v2' (unused-variable)
+TIKTOK.py:12:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:13:4: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:14:5: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:14:8: C0103: Variable name "v2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:18:11: C0121: Comparison to False should be 'not expr' (singleton-comparison)
+TIKTOK.py:14:5: W0612: Unused variable 'v1' (unused-variable)
+TIKTOK.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:29:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:30:4: W0612: Unused variable 'board' (unused-variable)
+TIKTOK.py:34:0: C0116: Missing function or method docstring (missing-function-docstring)
+TIKTOK.py:41:8: C0103: Variable name "p1" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:44:8: R1723: Unnecessary "elif" after "break" (no-else-break)
+TIKTOK.py:44:11: R0916: Too many boolean expressions in if statement (8/5) (too-many-boolean-expressions)
+TIKTOK.py:49:13: R0916: Too many boolean expressions in if statement (18/5) (too-many-boolean-expressions)
+TIKTOK.py:52:18: R1714: Consider merging these comparisons with "in" to "choice not in ('yes' or 'Yes', 'No' or 'no')" (consider-using-in)
+TIKTOK.py:65:27: C0121: Comparison to True should be just 'expr' (singleton-comparison)
+TIKTOK.py:66:12: C0103: Variable name "p2" doesn't conform to snake_case naming style (invalid-name)
+TIKTOK.py:69:15: R0916: Too many boolean expressions in if statement (8/5) (too-many-boolean-expressions)
+
+
+Report
+======
+70 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |0.00        |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |5      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |74     |98.67 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |1      |1.33  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |143    |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |5      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------------+------------+
+|message id                   |occurrences |
++=============================+============+
+|bad-whitespace               |114         |
++-----------------------------+------------+
+|invalid-name                 |9           |
++-----------------------------+------------+
+|trailing-whitespace          |7           |
++-----------------------------+------------+
+|missing-function-docstring   |5           |
++-----------------------------+------------+
+|unused-variable              |3           |
++-----------------------------+------------+
+|too-many-boolean-expressions |3           |
++-----------------------------+------------+
+|singleton-comparison         |3           |
++-----------------------------+------------+
+|line-too-long                |3           |
++-----------------------------+------------+
+|no-else-break                |1           |
++-----------------------------+------------+
+|missing-module-docstring     |1           |
++-----------------------------+------------+
+|missing-final-newline        |1           |
++-----------------------------+------------+
+|consider-using-in            |1           |
++-----------------------------+------------+
+
+
+
+
+----------------------------------------------------------------------
+Your code has been rated at -11.57/10 (previous run: -11.57/10, +0.00)
+
+
+C:\Users\saamy\Desktop\Python>python TIKTOK.py
+  |   |
+  |   |
+  |   |
+Enter the area where Player 1 need to put the X :5
+  |   |
+  | X |
+  |   |
+Enter the area where Player 2 need to put the O :1
+  |   |
+  | X |
+O |   |
+Enter the area where Player 1 need to put the X :2
+  |   |
+  | X |
+O | X |
+Enter the area where Player 2 need to put the O :8
+  | O |
+  | X |
+O | X |
+Enter the area where Player 1 need to put the X :6
+  | O |
+  | X | X
+O | X |
+Enter the area where Player 2 need to put the O :4
+  | O |
+O | X | X
+O | X |
+Enter the area where Player 1 need to put the X :7
+X | O |
+O | X | X
+O | X |
+Enter the area where Player 2 need to put the O :3
+X | O |
+O | X | X
+O | X | O
+Enter the area where Player 1 need to put the X :9
+X | O | X
+O | X | X
+O | X | O
+The Match is draw !!
+
+do you wanna start the play ? : Yes or No yes
+Enter the area where Player 1 need to put the X :4
+  |   |
+X |   |
+  |   |
+Enter the area where Player 2 need to put the O :0
+Please enter a valid Digit !
+Enter the area where Player 2 need to put the O :6
+  |   |
+X |   | O
+  |   |
+Enter the area where Player 1 need to put the X :5
+  |   |
+X | X | O
+  |   |
+Enter the area where Player 2 need to put the O :9
+  |   | O
+X | X | O
+  |   |
+Enter the area where Player 1 need to put the X :3
+  |   | O
+X | X | O
+  |   | X
+Enter the area where Player 2 need to put the O :8
+  | O | O
+X | X | O
+  |   | X
+Enter the area where Player 1 need to put the X :7
+X | O | O
+X | X | O
+  |   | X
+Congrats!, Player 1 Wins the game
+Game Over!
+
+C:\Users\saamy\Desktop\Python>
